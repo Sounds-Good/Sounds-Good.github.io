@@ -1,37 +1,30 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-    height: 100%
-  }
-  
-  .bgimg {
-    /* Background image */
-    background-image: url('Media/Images/Bg.png');
-    /* Full-screen */
-    height: 100%;
-    /* Center the background image */
-    background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
-    font-size: 25px;
-  }
-  
+* {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  color: aquamarine;
+}
+
+body {
+  /* Background Image */
+  background-image: url('Media/Images/Bg.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+  .banner {
+    height: auto;
+    width: 30%;
+}
+
   /* Position text in the top-left corner */
   .topleft {
     position: absolute;
+    object-fit: contain;
     top: 0;
     left: 16px;
-    width: 50%;
-    height: auto;
   }
 
-  
   /* Position text in the bottom-left corner */
   .bottomleft {
     position: absolute;
@@ -46,10 +39,17 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+ 
+  }
+  .middle > h1 {
+    font-size: 25px;
   }
   
-  /* Style the <hr> element */
-  hr {
+  .middle > p {
+    font-size: 20px;
+  }
+
+  .middle > hr {
     margin: auto;
     width: 40%;
   }
