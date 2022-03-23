@@ -11,18 +11,25 @@ body {
   height: 100%;
   width: 100%;
 }
+  .bgvid {
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
 
   .banner {
-    height: auto;
-    width: 30%;
+    font-size: 50px;
+    padding-top:80px;
+    color: #237bb6;
 }
-
+  
   /* Position text in the top-left corner */
   .topleft {
     position: absolute;
-    object-fit: contain;
+    left: 0;
     top: 0;
-    left: 16px;
+    width: 100%;
   }
 
   /* Position text in the bottom-left corner */
