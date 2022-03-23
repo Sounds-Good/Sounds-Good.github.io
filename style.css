@@ -5,7 +5,7 @@ body, html {
   
   .bgimg {
     /* Background image */
-    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    background-image: url('Media/Images/Bg.png');
     /* Full-screen */
     height: 100%;
     /* Center the background image */
@@ -27,7 +27,10 @@ body, html {
     position: absolute;
     top: 0;
     left: 16px;
+    width: 50%;
+    height: auto;
   }
+
   
   /* Position text in the bottom-left corner */
   .bottomleft {
