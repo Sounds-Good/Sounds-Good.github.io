@@ -4,13 +4,13 @@
   color: aquamarine;
 }
 
-body {
-  /* Background Image */
+/* body {
   background-image: url('Media/Images/Bg.png');
   background-size: cover;
   height: 100%;
   width: 100%;
-}
+} */
+
   #bgvid {
     position: fixed;
     left: 0;
