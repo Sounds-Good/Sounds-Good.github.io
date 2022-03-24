@@ -21,21 +21,34 @@
   
     .banner {
       font-size: 35px;
-      padding-top:60px;
       color: #237bb6;
-  }
-    
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-right: 70%;
+      background-color: rgb(68, 255, 193);
+    }
+
     .topleft {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
+    
     }
   
     .bottomleft {
       position: absolute;
       bottom: 0;
       left: 16px;
+      background-color: rgb(68, 255, 193);
+      border-top-right-radius: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .bottomleft > p {
+      color: #237bb6
     }
   
     .middle {
