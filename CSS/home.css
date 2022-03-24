@@ -15,7 +15,6 @@
   }
  
   body {
-  background: url(https://hdwallpapers.cat/wallpaper_mirror/purple_harmony_sky_mountains_sunset_nature_hd-wallpaper-1913939.jpg);
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
@@ -46,7 +45,6 @@
   border-bottom: 1px solid rgba(225,225,225,0.5);
   z-index: 1000;
   border-radius: 0px 0px 50px 50px ;
-
 }
 
 .nav ul {
@@ -64,9 +62,10 @@
   font-family: soleil, sans-serif;
   font-weight: 100;
   font-size: 25px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 19px 16px;
   transition: background 0.4s, text-shadow 0.4s;
+  border-radius: 25px;
   cursor: pointer;
   
 }
@@ -74,6 +73,7 @@
 .nav ul li a:hover {
   background: rgba(255,255,255, 0.2);
   text-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  border-radius: 25px;
 }
 
 .first {
