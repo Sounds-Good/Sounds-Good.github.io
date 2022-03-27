@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-color: darkcyan;
   background-size: cover;
+  overflow: hidden;
 }
 
 nav {
