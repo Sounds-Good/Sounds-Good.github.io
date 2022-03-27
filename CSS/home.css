@@ -7,7 +7,9 @@
     width: 100%;
     z-index: -1;
   }
- 
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100%;
   width: 100%;
@@ -15,8 +17,14 @@ body {
   background-repeat: no-repeat;
   background-color: #0C1218;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 .backdev {
   position: absolute;
@@ -26,10 +34,13 @@ body {
   color: rgba(127, 255, 212, 0);
   transition: 0.5s;
   font-size: 20px;
+  font-family: Sofia;
 }
 .backdev:hover {
   color: rgba(127, 255, 212, 1);
 }
+
+/* start of nav bar */
 
 nav {
   width: 900px;
@@ -40,6 +51,7 @@ nav {
   backdrop-filter: blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 0px 0px 2px 2px;
+  box-shadow:  0 0 1rem 0 rgba(0, 0, 0, 0.5);
 }
 
 nav li {
@@ -63,8 +75,29 @@ nav li a:hover {
 
 nav ul {
   list-style-type: none;
-
 }
+
+/* end of nav bar */
+
+  /* Nice*/
+
+/* Main Content */
+
+.main-block {
+  height: fit-content;
+  width: 60%;
+  padding: 0.5vh 2.5vw 0.5vh 2.5vw;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(5px);
+  box-shadow:  0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  color:aliceblue;
+  display: block;
+  text-align: center;
+  margin: 10em auto;
+}
+
+/* end main content */
 
 /* Footer */
 .footer {
@@ -82,3 +115,4 @@ nav ul {
   float: left;
   padding-left: 20px;
 }
+/* End of footer */
