@@ -1,7 +1,7 @@
 * {
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
+    color: black;
   }
   
   body {
@@ -21,37 +21,37 @@
       width: 100%;
       
     }
-  
-    .banner {
-      font-size: 35px;
-      color: #237bb6;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      margin-right: 70%;
-      background-color: rgb(68, 255, 193);
-    }
+
 
     .topleft {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
-    
+    }
+
+    .topleft h1 {
+      font-size: 35px;
+      color: #237bb6;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-top: 50px;
+      padding-bottom: 65px;
+      margin-right: 70%;
+      background-color: #0c1218;
     }
   
     .bottomleft {
       position: absolute;
       bottom: 0;
-      left: 16px;
-      background-color: rgb(68, 255, 193);
+      left: 0;
+      background-color: #0C1218;
       border-top-right-radius: 10px;
       padding-right: 10px;
       padding-left: 10px;
     }
     .bottomleft > p {
-      color: #237bb6
+      color: aliceblue
     }
   
     .middle {
@@ -60,7 +60,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      box-shadow:  0 0 1rem 0 rgba(0, 0, 0, .2);
+      box-shadow:  0 0 1rem 0 rgba(0, 0, 0, .5);
       background: inherit;
       overflow: hidden;
       border-radius: 5px;
@@ -86,12 +86,14 @@
     
     .middle > p {
       font-size: 20px;
+      font-weight: bold;
       margin: 20px 20px 20px 20px;
+  
     }
   
     .typing {
       overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid #7fffd4; /* The typwriter cursor */
+      border-right: .15em solid aqua; /* The typwriter cursor */
       white-space: nowrap; /* Keeps the content on a single line */
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: .15em; /* Adjust as needed */
@@ -107,7 +109,7 @@
   
     @keyframes blink-caret {
       from, to { border-color: transparent }
-      50% { border-color: aquamarine;  }
+      50% { border-color: aqua;  }
     }
   
     .middle > hr {
