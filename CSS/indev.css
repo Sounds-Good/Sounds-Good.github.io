@@ -1,10 +1,11 @@
 * {
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
-    color: aquamarine;
+    color: aliceblue;
   }
   
   body {
+    background-color: #0C1218;
     background-image: url('Media/Images/Bg.png');
     background-size: cover;
     height: 100%;
