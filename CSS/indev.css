@@ -1,7 +1,7 @@
 * {
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(92, 169, 199);
+    color: rgb(103, 173, 150);
   }
   
   body {
@@ -21,42 +21,40 @@
       width: 100%;
       
     }
-    .button a {
-      color: aquamarine;
-      font-size: 24px;
-      text-decoration: none;
-      font-weight: bold;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    }
 /* end of background stuff */
-
     .topleft {
-      position: absolute;
       left: 0;
-      top: 0;
-      width: 100%;
+      top: 5vh;
+      width: 25vw;  
+      backdrop-filter: blur(5px); 
+      background-color: rgba(255, 255, 255, 0.125); 
+      border-bottom: solid .5px rgba(255, 255, 255, 0.5);
+      box-shadow: 0em 0em 1em black ; 
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      white-space: nowrap;
+      padding-bottom: 2.5em;
+    }
+    .topleft img {
+      
     }
 
     .topleft h1 {
-      font-size: 35px;
+      font-size:3em;
       color: #237bb6;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      padding-top: 50px;
-      padding-bottom: 65px;
-      margin-right: 70%;
-      background-color: #0c1218;
+      padding-top: 1.5em;
+      
     }
 
 /* button stuff */
 .button {
   border-radius: 4px;
-  background-color: rgb(92, 169, 199);
+  background-color: #0C1218;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 14px;
   padding: 10px;
   width: 200px;
   transition: all 0.5s;
@@ -88,6 +86,14 @@
   opacity: 1;
   right: 0;
 }
+.button a {
+  color: rgb(103, 173, 150);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 
 /* bottom stuff */
     .bottomleft {
@@ -109,32 +115,22 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      box-shadow:  0 0 1rem 0 rgba(0, 0, 0, .5);
+      box-shadow:  0 0 .5rem 0 rgba(0, 0, 0, .5);
       background: inherit;
       overflow: hidden;
       border-radius: 5px;
-      z-index: 1;
+      backdrop-filter: blur(5px);
+      border-bottom: solid .5px rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.125);
     }
   
-    .middle:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      box-shadow: inset 0 0 2000px rgba(255, 255, 255, .3);
-      filter: blur(30px);
-      background: inherit;
-      margin: -20px;
-      z-index: -1;
-    }
     .middle > h1 {
-      font-size: 25px;
+      font-size: 3em;
+      
     }
     
     .middle > p {
-      font-size: 20px;
+      font-size: 2em;
       font-weight: bold;
       margin: 20px 20px 20px 20px;
   
