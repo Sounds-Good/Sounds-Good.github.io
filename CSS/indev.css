@@ -10,6 +10,9 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
   
     #bgvid {
@@ -31,13 +34,10 @@
       background-color: rgba(255, 255, 255, 0.125); 
       border-bottom: solid .5px rgba(255, 255, 255, 0.5);
       box-shadow: 0em 0em 1em black ; 
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-top-right-radius: .3em;
+      border-bottom-right-radius: .3em;
       white-space: nowrap;
       padding-bottom: 2.5em;
-    }
-    .topleft img {
-      
     }
 
     .topleft h1 {
@@ -101,9 +101,9 @@
       bottom: 0;
       left: 0;
       background-color: #0C1218;
-      border-top-right-radius: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
+      border-top-right-radius: 1em;
+      padding-right: 1em;
+      padding-left: 1em;
     }
     .bottomleft > p {
       color: aliceblue
@@ -118,7 +118,7 @@
       box-shadow:  0 0 .5rem 0 rgba(0, 0, 0, .5);
       background: inherit;
       overflow: hidden;
-      border-radius: 5px;
+      border-radius: 2.5px;
       backdrop-filter: blur(5px);
       border-bottom: solid .5px rgba(255, 255, 255, 0.5);
       background-color: rgba(255, 255, 255, 0.125);
@@ -126,7 +126,6 @@
   
     .middle > h1 {
       font-size: 3em;
-      
     }
     
     .middle > p {
