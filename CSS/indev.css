@@ -1,6 +1,6 @@
 * {
     font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(103, 173, 150);
   }
   
@@ -92,71 +92,83 @@
   text-decoration: none;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 /* bottom stuff */
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: #0C1218;
-      border-top-right-radius: 1em;
-      padding-right: 1em;
-      padding-left: 1em;
-    }
-    .bottomleft > p {
-      color: aliceblue
-    }
-  
-    .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      box-shadow:  0 0 .5rem 0 rgba(0, 0, 0, .5);
-      background: inherit;
-      overflow: hidden;
-      border-radius: 2.5px;
-      backdrop-filter: blur(5px);
-      border-bottom: solid .5px rgba(255, 255, 255, 0.5);
-      background-color: rgba(255, 255, 255, 0.125);
-    }
-  
-    .middle > h1 {
-      font-size: 3em;
-    }
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 1em black;
+    background-color: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(5px);
+    border-bottom: solid 0.125px white;
+    border-top-right-radius: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .bottomleft > p {
+    font-size: 1.2em;
+    color: rgb(103, 173, 150)
+  }
     
-    .middle > p {
-      font-size: 2em;
-      font-weight: bold;
-      margin: 20px 20px 20px 20px;
-  
+  .frost {
+    position: absolute;
+    border-radius: 2.5px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-bottom: solid .5px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.125);
+    box-shadow:  0 0 1em black;
+    top: 0;
+    left: 0;
+    z-index: -1;
     }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 1em;
+  }
   
-    .typing {
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid aqua; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: .15em; /* Adjust as needed */
-      animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-    }
+  .middle > h1 {
+    font-size: 3em;
+  }
+    
+  .middle > p {
+    font-size: 2em;
+    font-weight: bold;
+     margin: 20px 20px 20px 20px;
   
-    @keyframes typing {
-      from { width: 0 }
-      to {width: 100% }
-    }
+  }
   
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: aqua;  }
-    }
+  .typing {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid aqua; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  }
   
-    .middle > hr {
-      margin: auto;
-      width: 40%;
-    }
+  @keyframes typing {
+    from { width: 0 }
+    to {width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(103, 173, 150);  }
+  }
+  
+  .middle > hr {
+    margin: auto;
+    width: 40%;
+  }
